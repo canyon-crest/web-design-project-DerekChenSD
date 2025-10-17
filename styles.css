@@ -4,7 +4,7 @@ body{
     font-family: sans-serif;
 }
 #container{
-    width:750px;
+    width:1000px;
     margin: auto;
     padding: 50px;
     background-color: #7fcde9d9;
@@ -24,6 +24,8 @@ h2{
     font-style: italic;
 }
 h3{
+    background: white;
+    color:#124562;
     border-left: 10px groove #fff;
     padding-left: 10px;
     border-radius: 30px;
@@ -81,6 +83,58 @@ a:active{
     border-radius: 5px;
 
 }
-div{
+#sidebar{
+    background-color: rgb(106, 161, 215);
+    width: 250px;
+    line-height: 2.50em;
+    border: 2px solid rgb(0, 0, 0);
+    float: right;
+    margin: 20px;
+    margin-top: 80px;
+    margin-bottom: 80px;
 
+}
+#sidebar h3{
+    border: none;
+    padding: 5px;
+    margin: 15px auto;
+    background: none;
+}
+li{
+    font-style: italic;
+}
+@media  (max-width:1200px){
+    #container{
+        width: 800px;
+    }
+}
+
+@media (max-width:992px) {
+ #container{
+    width:100%;
+ }
+    body,p,#container,#p2,h3{
+        margin: 0;
+        border: none;
+        padding: 0;
+    }
+    #sidebar{
+        display:none;
+    }
+    p,#p2,h3{
+        margin:10px;  
+    }
+ }   
+@media (max-width:768px){
+    #sidebar{
+        display:none;
+    }
+    h1{border:none        
+        color: black;
+        width: 90%;
+
+    }
+    img,#pic1{
+
+    }
 }
