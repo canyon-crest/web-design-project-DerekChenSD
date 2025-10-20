@@ -1,7 +1,19 @@
 body{
-    background-color: #30a1e2;
-    color: #000;
+    margin: 0;
+    min-height: 100vh;
     font-family: sans-serif;
+    color: #000;
+    /* top (0%) -> bottom (100%) gradient */
+    background: linear-gradient(to bottom, #30a1e2 0%, #96dbf4 100%);
+    /* keep background fixed while scrolling */
+    background-attachment: fixed;
+    /* Improves font smoothing in WebKit browsers */
+    -webkit-font-smoothing: antialiased;
+    /* makes the text easier to read on screens when scrolling down*/
+    font-smooth: always;
+
+
+
 }
 #container{
     width:1000px;
@@ -44,10 +56,11 @@ p{
 }
 img{
     width:200px;
-    border: 3px solid black;
     border-radius: 20px;
     float: left;
-    margin-right: 30px
+    margin-right: 30px;
+    box-shadow: 0 12px 30px rgba(2,20,40,0.35);
+    transition: transform 220ms ease, box-shadow 220ms ease;
     
 }
 /*PSEUDO SELECTORS */
@@ -134,12 +147,24 @@ li{
     #sidebar{
         display:none;
     }
-    h1{border:none        
+    h1{border:none;
         color: black;
         width: 90%;
 
     }
     img,#pic1{
-
+        width: 100%;
     }
 }
+
+#container{
+  max-width:1100px;
+  margin:36px auto;
+  padding:28px;
+  background:linear-gradient(180deg,var(--card), rgba(255,255,255,0.85));
+  border-radius:calc(var(--radius) + 6px);
+  box-shadow:var(--shadow);
+  border:1px solid rgba(255,255,255,0.6);
+  backdrop-filter: blur(6px);
+}
+
