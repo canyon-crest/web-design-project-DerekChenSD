@@ -161,10 +161,10 @@ li{
   max-width:1100px;
   margin:36px auto;
   padding:28px;
-  background:linear-gradient(180deg,var(--card), rgba(255,255,255,0.85));
+  background:linear-gradient(180deg,var(--card), rgba(88, 82, 187, 0.85));
   border-radius:calc(var(--radius) + 6px);
   box-shadow:var(--shadow);
-  border:1px solid rgba(255,255,255,0.6);
-  backdrop-filter: blur(6px);
+  border:2px solid rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(30px);
 }
 
