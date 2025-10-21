@@ -110,6 +110,9 @@ a:active{
     margin: 20px;
     margin-top: 80px;
     margin-bottom: 80px;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    
 
 }
 #sidebar h3{
@@ -168,3 +171,27 @@ li{
   backdrop-filter: blur(30px);
 }
 
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+#pic1 {
+    border: none;
+    width: 200px;
+    animation: float 10s ease-in-out infinite; 
+}
+
+img {
+    transition: transform 1s ease, box-shadow 1s ease;
+}
+img:hover {
+    transform: scale(1.1) rotate(360deg);
+}
